@@ -4,6 +4,8 @@ server:
   secret_key: "this should only be used behind VPN"
   limiter: false  # can be disabled for a private instance
   image_proxy: true
+  default_http_headers:
+    Access-Control-Allow-Origin: "*"
 ui:
   static_use_hash: true
 search:
